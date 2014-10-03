@@ -1,0 +1,15 @@
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+*.cache
+*.docstates
+packages/*
+*.pidb
+*.userprefs
+*DS_Store
+*.log
+*.vspx
+bower_components
+node_modules
+*.sln.ide
