@@ -18,10 +18,13 @@ This project contains a demonstration of an approach for integration of Bower an
         "bootstrap": "~3.2.0",
     },
     "exportsOverride": {
-        "/bootstrap|jquery/": {
-          "js": "dist/**/*.js",
-          "css": "dist/**/*.css",
-          "fonts": "**/*.{eot,svg,ttf,woff}"
+        "bootstrap": {
+            "js": "dist/**/*.js",
+            "css": "dist/**/*.css",
+            "fonts": "**/*.{eot,svg,ttf,woff}"
+        },
+        "jquery": {
+            "js": "dist/*.{js,map}"
         }
     }
 }
