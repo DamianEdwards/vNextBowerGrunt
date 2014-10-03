@@ -13,7 +13,12 @@
         "bower.json"
     ],
     "dependencies": {
-        "Microsoft.AspNet.Server.IIS": "1.0.0-beta1-*"
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta1-*",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-beta1-*",
+        "Kestrel": "1.0.0-beta1-*"
+    },
+    "commands": {
+        "web": "kestrel"
     },
     "scripts": {
         "postrestore": [ "npm install" ],
