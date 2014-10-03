@@ -6,6 +6,7 @@ This project contains a demonstration of an approach for integration of Bower an
 - `nodejs` and `npm`
 - `grunt-cli`
 - `bower`
+- `>= KRE 1.0.0.beta1`
 
 ### bower.json
 ```JSON
@@ -60,6 +61,7 @@ module.exports = function (grunt) {
                 options: {
                     targetDir: "wwwroot/lib",
                     layout: "byComponent",
+                    cleanTargetDir: true
                 }
             }
         }
@@ -102,7 +104,11 @@ Among other things, this files declares the folders to exclude for packing and c
 
 To kick off the process, execute `kpm restore`. This will run `npm install` which will install the packages defined in packages.json. After this, the grunt task will execute the grunt file. The `grunt-bower-task` executes `bower install` which installs the bower packages into `bower_components` and copies those files into the `wwwroot` folder according to the settings in gruntfile.js and bower.json.
 
-The workflow for adding packages to either bower.json/packages.json/project.json is as follows:
+The workflow for changing dependencies to either bower.json/packages.json/project.json is as follows:
 
 - Add a line to the appropriate file
 - Run `kpm restore`
+
+## Running the sample
+
+Run `kpm restore`, then navigate to `src/vNextBowerGrunt` and run k web. Open `http://localhost:5000` in the browser.
