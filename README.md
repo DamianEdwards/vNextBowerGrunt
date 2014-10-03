@@ -80,16 +80,13 @@ The default grunt task wires up the `grunt-bower-task` and sets up the default c
 ```JSON
 {
     "exclude": [
-        "wwwroot",
-        "node_modules",
-        "bower_components"
+        "wwwroot/**/*.*",
+        "node_modules/**/*.*",
+        "bower_components/**/*.*"
     ],
     "pack-exclude": [
-        "node_modules",
-        "bower_components",
-        "package.json",
-        "gruntfile.js",
-        "bower.json"
+        "node_modules/**/*.*",
+        "bower_components/**/*.*"
     ],
     "scripts": {
         "postrestore": [ "npm install" ],
