@@ -8,6 +8,7 @@
                 options: {
                     targetDir: "wwwroot/lib",
                     layout: "byComponent",
+                    cleanTargetDir: true
                 }
             }
         }
